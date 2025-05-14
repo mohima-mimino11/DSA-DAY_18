@@ -8,11 +8,11 @@ int main(){
       scanf("%d", &a[i][j]);
     }
   }
-  for(int i = 0; i < r; i++){
-    for(int j = 0; j < c; j++){
-      printf("%d ", a[i][j]);
-    }
-    printf("\n");
+  if(r == c){
+    printf("This is a square matrix");
+  }
+  else{
+    printf("This is not a square matrix");
   }
   
   return 0;
